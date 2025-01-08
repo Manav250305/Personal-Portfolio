@@ -15,26 +15,26 @@ body{
 }
 
 .btn-circle {
-    width: 100px; /* Adjust size */
+    width: 100px; 
     height: 100px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px; /* Adjust text size */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
-    border: 2px solid transparent; /* Add a border */
-    transition: transform 0.2s ease; /* Add hover effect */
+    font-size: 18px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    border: 2px solid transparent; 
+    transition: transform 0.2s ease;
   }
   
   .btn-circle:hover {
-    transform: scale(1.1); /* Slightly increase size on hover */
-    border-color: rgba(0, 0, 0, 0.3); /* Highlight border on hover */
+    transform: scale(1.1); 
+    border-color: rgba(0, 0, 0, 0.3); 
   }
   
   .button-group {
-    margin-top: 5rem; /* Add spacing from other content */
-    gap: 1rem; /* Control spacing between buttons */
+    margin-top: 5rem; 
+    gap: 1rem; 
   }
  
  #animate{
@@ -76,4 +76,29 @@ body{
    }
     
  }
+
+.container {
+  opacity: 0;
+  transform: translateY(20px); 
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.container.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+body.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+body {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.Heading{
+  font-family: serif;
+}
 
