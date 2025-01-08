@@ -1,0 +1,79 @@
+body{
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.img-fluid{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+.container{
+   margin-top: 100px; 
+    /*margin-bottom: 50px;*/
+}
+
+.btn-circle {
+    width: 100px; /* Adjust size */
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px; /* Adjust text size */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
+    border: 2px solid transparent; /* Add a border */
+    transition: transform 0.2s ease; /* Add hover effect */
+  }
+  
+  .btn-circle:hover {
+    transform: scale(1.1); /* Slightly increase size on hover */
+    border-color: rgba(0, 0, 0, 0.3); /* Highlight border on hover */
+  }
+  
+  .button-group {
+    margin-top: 5rem; /* Add spacing from other content */
+    gap: 1rem; /* Control spacing between buttons */
+  }
+ 
+ #animate{
+  animation: blink 5s linear infinite;
+    padding: 10px 5px 10px 10px;
+    text-align: center;
+    font-size: 50px;
+ }
+
+ @keyframes blink {
+  0%{
+    color: red;
+  }
+  50%{
+    color: blue;
+  }
+  100%{
+    color:green;
+  }
+ }
+ @media (max-width:1200px) {
+  .Explore .img-fluid{
+    width: 900px;
+   height: 250px;
+   object-fit: cover;
+  }
+  .Portfolio .img-fluid{
+    width: 500px;
+   height: 250px;
+   object-fit: cover;
+  }
+ }
+ @media (max-width:768px)
+ {
+   .img-fluid{
+     width: 250px;
+     height: 250px;
+     object-fit: cover;
+   }
+    
+ }
+
